@@ -1,0 +1,23 @@
+html, body
+{
+    height: 100%;
+    margin:0;
+    padding:0;
+}
+
+.LogoImage {
+  position: absolute;
+  /*top: 50%;*/
+  left :50%;
+  -ms-transform: translate(-50%, -125%);
+  transform: translate(-50%, -125%);
+  width : 30%;
+}   
+.background-media__video{
+	display:block;
+	/*position:absolute*/;
+	bottom:0;
+	width:100%;
+	min-width:100%;
+	min-height:100%
+	}
