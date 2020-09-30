@@ -12,7 +12,10 @@
   float: left;
   width: 33.33%;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  height: 400px; /* Should be removed. Only for demonstration */
+  vertical-align: middle;
+  text-align:center;
+  background-color:#87c785
 }
 /* Clear floats after the columns */
 .container1:after {
@@ -23,6 +26,18 @@
 .imgs1 {
   width: 250px;
 }
+@media all and (max-device-width: 1024px)
+{
+  .column {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    height: 400px; /* Should be removed. Only for demonstration */
+    vertical-align: middle;
+    text-align:center;
+    background-color:#87c785
+  }
+}
 </style>
 </head>
 <body>
@@ -30,7 +45,7 @@
 <video autoplay="autoplay" muted="" loop="" class="background-media__video">
 	<source src="video/624638333.mp4" type="video/mp4">
 </video>
-<div><img class="LogoImage" src="img/LysOffice-1.png"/></div>
+<div><img class="LogoImage" src="img/LysOffice-2.png"/></div>
 </div>
 <div id="container1">
     <div class="column" ><br><br><img class="imgs1" src="img/www.png"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
