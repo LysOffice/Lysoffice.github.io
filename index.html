@@ -3,62 +3,44 @@
 <meta name="viewport" content="width=1024">
 <link rel="stylesheet" href="css/main.css?v=1">
 <link rel="manifest" href="/manifest.webmanifest">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <style>
-* {
-	box-sizing: border-box;
-}
-
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 10px;
-  height: 400px; /* Should be removed. Only for demonstration */
-  vertical-align: middle;
-  text-align:center;
-  background-color:#87c785
-}
-/* Clear floats after the columns */
-.container1:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.container2:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.imgs1 {
+  .imgs1 {
   width: 250px;
 }
-.title1 {
-  font-size:50;
-  color:azure;
+#section-2 h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1;
+    letter-spacing: -1px;
+    color: #fff;
 }
-.col1 {
-  background: linear-gradient(#8EBA1E, #529830); 
+#section-2 hr {
+    height: 2px;
+    width: 90px;
+    background-color: #9cbd5c;
+    margin-bottom: 80px;
 }
-.col2 {
-  background: linear-gradient(#1B8236, #6EA62A); 
+#section-2 {
+  /*background: url(../img/accueil/bg-section-2.jpg) no-repeat center top;*/
+    background-size: cover;
+    padding: 120px 0;
+    text-align: center;
+    background-color: #004D63;
+}
+#section-2 figure {background: rgb(0,0,0,.25);padding: 20px 5px;margin-top:15px;-webkit-transition: all 0.25s;transition: all 0.25s;}
+#section-2 figure:hover {background: #10589a}
+#section-2 figure img {width: 120px}
+#section-2 figure figcaption {font-size: 1.1rem;text-transform: uppercase;color:#fff;font-weight: 700;padding:15px 0 15px 0;}
+@media (max-width:767px){
+  #section-2 h2 {font-size: 2.5rem}
 }
 
-@media all and (max-device-width: 1024px)
-{
-  .column {
-    float: left;
-    width: 100%;
-    padding: 10px;
-    height: 400px; /* Should be removed. Only for demonstration */
-    vertical-align: middle;
-    text-align:center;
-    background-color:#87c785
-  }
-  .title1 {
-    font-size:70;
-    color:azure;
-  }
-}
+
 </style>
 </head>
 <body>
@@ -68,15 +50,39 @@
 </video>
 <div><img class="LogoImage" src="img/LysOffice-2.png"/></div>
 </div>
-<div id="container1">
-    <div class="column col1" ><br><br><img class="imgs1" src="img/www.png"><div class="title1">Création de Sites Web</div></div>
-    <div class="column col2" ><img class="imgs1" src="img/cloud.png"><div class="title1">Assistance Cloud</div></div>
-    <div class="column col1" ><img class="imgs1" src="img/coding.png"><div class="title1">Objets Connectés</div></div>
+<div id="section-2">
+  <div class="container">
+    <h2>Nos Compétences</h2>
+    <hr>
+    <div class="row">
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="content" data-toggle="modal">
+          <figure><img class="imgs1" src="img/www.png"><figcaption>Création de Sites Web</figcaption></figure></div></div>
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="content">
+          <figure><img class="imgs1" src="img/cloud.png"><figcaption>Assistance Cloud</figcaption></figure></div></div>
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="content" data-toggle="modal">
+          <figure><img class="imgs1" src="img/coding.png"><figcaption>Objets Connectés</figcaption></figure></div></div>
+      <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="content" data-toggle="modal">
+            <figure><img class="imgs1" src="img/mssql.png"><figcaption>SQL Server</figcaption></figure></div></div>
+      <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="content" data-toggle="modal">
+            <figure><img class="imgs1" src="img/python.png"><figcaption>API Python</figcaption></figure></div></div>
+      <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="content" data-toggle="modal">
+              <figure><img class="imgs1" src="img/contact3.png"><figcaption>Nous Contacter</figcaption></figure></div></div>
+    </div>
+    </div>
+  </div>
 </div>
-<br>
-<div id="container2">
-  <div class="column col2" ><br><br><img class="imgs1" src="img/mssql.png"><div class="title1">SQL Server</div></div>
-  <div class="column col1"><img class="imgs1" src="img/python.png"><div class="title1">API Python</div></div>
-  <div class="column col2" ><img class="imgs1" src="img/contact3.png"><div class="title1">Nous Contacter</div></div>
-</div>
+
+<div class="containerH1"><br>25 années d'expertise<br><br></div>
+<div class="scrollToTop top-on">^</div>
+
+
+<script src="js/smoothscroll.js"></script>
+<script src="js/main.js"></script>
 </body>
+</html>
