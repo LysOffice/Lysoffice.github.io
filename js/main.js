@@ -1,4 +1,9 @@
-window.onscroll = function() {stickymenu()};
+
+$( document ).ready() {
+  window.onscroll = function() {stickymenu()};
+}
+
+
 
 var sticky = 52;
 function stickymenu() {
