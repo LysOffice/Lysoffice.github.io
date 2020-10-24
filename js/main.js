@@ -1,7 +1,9 @@
+$(document).ready(function() {
+  $("div").click(function() {
+    window.onscroll = function() {stickymenu();}
+  });
+});
 
-$( document ).ready() {
-  window.onscroll = function() {stickymenu()};
-}
 
 
 
